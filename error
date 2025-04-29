@@ -1,0 +1,6 @@
+main.c:17:1: error: initializer element is not constant
+main.c:18:1: error: initializer element is not constant
+main.c: In function '_T1Interrupt':
+main.c:122:5: warning: implicit declaration of function 'touch_select_dim'
+main.c: In function 'main':
+main.c:232:5: warning: implicit declaration of function 'touch_init'
