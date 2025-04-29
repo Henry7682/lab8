@@ -12,12 +12,15 @@
 #include "timer.h"
 
 // Calibration constants for touchscreen and servo
-static const double MIN_X = 410.0, MAX_X = 2540.0;
-static const double MIN_Y = 300.0, MAX_Y = 3000.0;
-static const double MID_X = (MIN_X + MAX_X) / 2.0;
-static const double MID_Y = (MIN_Y + MAX_Y) / 2.0;
-static const double SERVO_MIN = 900.0, SERVO_MAX = 2100.0;
-static const double SERVO_CENTER = 1620.0;
+#define MIN_X        410.0
+#define MAX_X        2540.0
+#define MID_X       ((MIN_X + MAX_X) * 0.5)
+#define MIN_Y        300.0
+#define MAX_Y       3000.0
+#define MID_Y       ((MIN_Y + MAX_Y) * 0.5)
+#define SERVO_MIN    900.0
+#define SERVO_MAX   2100.0
+#define SERVO_CENTER ((SERVO_MIN + SERVO_MAX) * 0.5)
 
 // PID controller gains and parameters
 static int small_switch = 200;
